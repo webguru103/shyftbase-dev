@@ -1,0 +1,150 @@
+[debug] [2021-12-21T22:32:20.053Z] ----------------------------------------------------------------------
+[debug] [2021-12-21T22:32:20.055Z] Command:       /usr/local/Cellar/node/16.8.0/bin/node /usr/local/bin/firebase init
+[debug] [2021-12-21T22:32:20.055Z] CLI Version:   10.0.1
+[debug] [2021-12-21T22:32:20.055Z] Platform:      darwin
+[debug] [2021-12-21T22:32:20.055Z] Node Version:  v16.8.0
+[debug] [2021-12-21T22:32:20.056Z] Time:          Tue Dec 21 2021 14:32:20 GMT-0800 (Pacific Standard Time)
+[debug] [2021-12-21T22:32:20.056Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-12-21T22:32:20.060Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-21T22:32:20.060Z] > authorizing via signed-in user (appcodeninja@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/sgjh/workspace/shyftbase-dev/shyftbase-dev
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-12-21T22:33:45.314Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-12-21T22:33:45.315Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-21T22:33:46.183Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 21 Dec 2021 22:33:46 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-21T22:33:46.307Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"shyftbasedev","name":"shyftbasedevreact"}
+[debug] [2021-12-21T22:33:48.291Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 21 Dec 2021 22:33:48 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1167","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-21T22:33:48.293Z] > refreshing access token with scopes: []
+[debug] [2021-12-21T22:33:48.293Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-21T22:33:48.945Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 21 Dec 2021 22:33:49 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-21T22:33:49.117Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8981099664209041393 [none]
+[debug] [2021-12-21T22:33:50.248Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8981099664209041393 200
+[debug] [2021-12-21T22:33:50.248Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8981099664209041393 {"name":"operations/cp.8981099664209041393"}
+[debug] [2021-12-21T22:33:50.748Z] [Project Creation Poller] Retrying task index 0
+[debug] [2021-12-21T22:33:50.748Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8981099664209041393 [none]
+[debug] [2021-12-21T22:33:51.908Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8981099664209041393 200
+[debug] [2021-12-21T22:33:51.908Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8981099664209041393 {"name":"operations/cp.8981099664209041393","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"259006699853","projectId":"shyftbasedev","lifecycleState":"ACTIVE","name":"shyftbasedevreact","createTime":"2021-12-21T22:33:47.463Z"}}
+[debug] [2021-12-21T22:33:51.909Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-12-21T22:33:51.909Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-21T22:33:52.570Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 21 Dec 2021 22:33:52 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-21T22:33:52.709Z] >>> HTTP REQUEST POST https://firebase.googleapis.com/v1beta1/projects/shyftbasedev:addFirebase  
+ 
+[debug] [2021-12-21T22:33:55.277Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 21 Dec 2021 22:33:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-21T22:33:55.278Z] > refreshing access token with scopes: []
+[debug] [2021-12-21T22:33:55.278Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-21T22:33:55.936Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 21 Dec 2021 22:33:56 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-21T22:33:56.102Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MTQwMGFhZmQtZDg1NC00MTY3LWE1ZTUtY2ZkNTllZWE1NzVl [none]
+[debug] [2021-12-21T22:33:57.215Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MTQwMGFhZmQtZDg1NC00MTY3LWE1ZTUtY2ZkNTllZWE1NzVl 200
+[debug] [2021-12-21T22:33:57.215Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MTQwMGFhZmQtZDg1NC00MTY3LWE1ZTUtY2ZkNTllZWE1NzVl {"name":"operations/workflows/MTQwMGFhZmQtZDg1NC00MTY3LWE1ZTUtY2ZkNTllZWE1NzVl"}
+[debug] [2021-12-21T22:33:57.717Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-12-21T22:33:57.717Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MTQwMGFhZmQtZDg1NC00MTY3LWE1ZTUtY2ZkNTllZWE1NzVl [none]
+[debug] [2021-12-21T22:33:58.666Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MTQwMGFhZmQtZDg1NC00MTY3LWE1ZTUtY2ZkNTllZWE1NzVl 200
+[debug] [2021-12-21T22:33:58.666Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MTQwMGFhZmQtZDg1NC00MTY3LWE1ZTUtY2ZkNTllZWE1NzVl {"name":"operations/workflows/MTQwMGFhZmQtZDg1NC00MTY3LWE1ZTUtY2ZkNTllZWE1NzVl"}
+[debug] [2021-12-21T22:33:59.668Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-12-21T22:33:59.668Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MTQwMGFhZmQtZDg1NC00MTY3LWE1ZTUtY2ZkNTllZWE1NzVl [none]
+[debug] [2021-12-21T22:34:00.610Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MTQwMGFhZmQtZDg1NC00MTY3LWE1ZTUtY2ZkNTllZWE1NzVl 200
+[debug] [2021-12-21T22:34:00.610Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MTQwMGFhZmQtZDg1NC00MTY3LWE1ZTUtY2ZkNTllZWE1NzVl {"name":"operations/workflows/MTQwMGFhZmQtZDg1NC00MTY3LWE1ZTUtY2ZkNTllZWE1NzVl"}
+[debug] [2021-12-21T22:34:02.613Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-12-21T22:34:02.613Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MTQwMGFhZmQtZDg1NC00MTY3LWE1ZTUtY2ZkNTllZWE1NzVl [none]
+[debug] [2021-12-21T22:34:03.559Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MTQwMGFhZmQtZDg1NC00MTY3LWE1ZTUtY2ZkNTllZWE1NzVl 200
+[debug] [2021-12-21T22:34:03.559Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MTQwMGFhZmQtZDg1NC00MTY3LWE1ZTUtY2ZkNTllZWE1NzVl {"name":"operations/workflows/MTQwMGFhZmQtZDg1NC00MTY3LWE1ZTUtY2ZkNTllZWE1NzVl","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"shyftbasedev","projectNumber":"259006699853","displayName":"shyftbasedevreact","name":"projects/shyftbasedev","resources":{"hostingSite":"shyftbasedev"}}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase project is ready! 🎉🎉🎉
+[info] 
+[info] Project information:
+[info]    - Project ID: shyftbasedev
+[info]    - Project Name: shyftbasedevreact
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/shyftbasedev/overview
+[info] i  Using project shyftbasedev (shyftbasedevreact) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-12-21T22:34:24.191Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-12-21T22:34:24.996Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-12-21T22:34:24.996Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.6.1","browserURL":"https://www.gstatic.com/firebasejs/9.6.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.6.1/firebase.tgz"},"live":{"version":"9.6","browserURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.6.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.6.1/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.6.1/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.6.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.6.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.6.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.6.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.6.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/sgjh/workspace/shyftbase-dev/shyftbase-dev 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=782938872&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-12-21T22:34:51.473Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"a2180c3d7687ab053aa2","redirect_uri":"http://localhost:9005","state":"782938872"}
+[debug] [2021-12-21T22:34:52.472Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Tue, 21 Dec 2021 22:34:52 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"7f19e44d1704561569d0542c26770490\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"7F5D:10D3:EE91E:13B53E:61C2568C"}
+[debug] [2021-12-21T22:34:52.475Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-12-21T22:34:53.486Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-12-21T22:34:53.486Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"webguru103","id":24473200,"node_id":"MDQ6VXNlcjI0NDczMjAw","avatar_url":"https://avatars.githubusercontent.com/u/24473200?v=4","gravatar_id":"","url":"https://api.github.com/users/webguru103","html_url":"https://github.com/webguru103","followers_url":"https://api.github.com/users/webguru103/followers","following_url":"https://api.github.com/users/webguru103/following{/other_user}","gists_url":"https://api.github.com/users/webguru103/gists{/gist_id}","starred_url":"https://api.github.com/users/webguru103/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/webguru103/subscriptions","organizations_url":"https://api.github.com/users/webguru103/orgs","repos_url":"https://api.github.com/users/webguru103/repos","events_url":"https://api.github.com/users/webguru103/events{/privacy}","received_events_url":"https://api.github.com/users/webguru103/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"http://webguru103.github.io","location":null,"email":null,"hireable":null,"bio":"I'm a senior Full-Stack Developer with more than 9 years of experience in software industry.","twitter_username":null,"public_repos":70,"public_gists":0,"followers":14,"following":11,"created_at":"2016-12-09T09:17:28Z","updated_at":"2021-11-23T02:25:44Z","private_gists":0,"total_private_repos":5,"owned_private_repos":4,"disk_usage":195822,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as webguru103 
+[info] 
+[debug] [2021-12-21T22:35:40.582Z] >>> [apiv2][query] GET https://api.github.com/repos/webguru103/shyftbase-dev/actions/secrets/public-key type=owner
+[debug] [2021-12-21T22:35:41.332Z] <<< [apiv2][status] GET https://api.github.com/repos/webguru103/shyftbase-dev/actions/secrets/public-key 404
+[debug] [2021-12-21T22:35:41.332Z] <<< [apiv2][body] GET https://api.github.com/repos/webguru103/shyftbase-dev/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2021-12-21T22:36:22.374Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-12-21T22:36:23.306Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-12-21T22:36:23.306Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-12-21T22:36:23.509Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-12-21T22:36:24.197Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-12-21T22:36:24.252Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-12-21T22:36:24.252Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-12-21T22:36:24.939Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-12-21T22:36:24.939Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-12-21T22:36:27.374Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-12-21T22:36:28.107Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-12-21T22:36:28.108Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-12-21T22:37:00.173Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-12-21T22:37:00.724Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-12-21T22:37:00.922Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-12-21T22:37:00.922Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-12-21T22:37:01.463Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-12-21T22:37:01.463Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-12-21T22:38:40.196Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-12-21T22:38:41.142Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-12-21T22:38:41.142Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-12-21T22:38:46.036Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-12-21T22:38:46.775Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-12-21T22:38:46.775Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-12-21T22:38:49.868Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-12-21T22:38:50.612Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-12-21T22:38:50.612Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-12-21T22:38:52.180Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-12-21T22:38:52.508Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-12-21T22:38:52.875Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-12-21T22:38:53.575Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-12-21T22:38:53.575Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-12-21T22:38:54.231Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-12-21T22:38:54.231Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-12-21T22:38:55.112Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-12-21T22:38:55.112Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
